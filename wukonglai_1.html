@@ -30,8 +30,10 @@
 
 		$('textarea,input').click(function(){
 			$('footer').css('position','static');
-
-		})
+		});
+		$('textarea,input').blur(function(){
+			$('footer').css('position','fixed');
+		});
 	</script>
 </head>
 <body >

@@ -1,0 +1,208 @@
+@charset "utf-8";
+.header{
+	background-color:#3a3a3a;
+}
+.header > .btn  {
+	margin:0 10px;
+	border:none;
+	vertical-align: middle;
+	background-color:#3a3a3a;
+	color:#fff;
+}
+.header .head{
+	color:#fff;
+	display:inline-block;
+	vertical-align:middle;
+}
+#btn{
+	background-color:#3a3a3a;
+	color:#fff;	
+	float:right;
+	margin-top: 5px;
+}
+
+#myTab {
+	height:3em;
+	background-color:#fff;
+}
+#myTab li{
+	width:33.33%;
+	height:1.8em;
+	margin:.6em 0;
+	float:left;
+	text-align:center;
+}
+#myTab li:first-child{
+	border-right:1px solid #ccc;
+}
+#myTab li:last-child{
+	border-left:1px solid #ccc;
+}
+#myTab li span{
+	display: inline-block;
+	height:2.4em;
+	margin:0 auto;
+}
+#myTab li span:hover{
+	cursor: pointer;
+}
+#myTab li span.active{
+	color:#ff663c;
+	border-bottom:1px solid #ff663c;
+}
+
+.tab-pane .container{
+	background-color:#fff;
+	padding-top:10px;
+}
+#renwu img{
+	border-radius:50%;
+	height:100%;
+}
+#renwu .col-xs-12,#renqi .col-xs-12{
+	border-bottom:1px solid #ccc;
+	padding-top:8px;
+	padding-bottom: 8px;
+}
+#renwu .col-xs-12 .col-xs-3{
+	height:2.8em;
+	text-align: center;
+}
+#renwu .col-xs-12 .money{
+	color:#ff663c;
+	float:right;
+}
+#renwu .col-xs-12 .col-xs-5{
+	padding:0;
+}
+#renwu .col-xs-12 h5{
+	margin:0;
+}
+#renwu .col-xs-12 .date{
+	color:#999;
+	padding-top:4px;
+	margin-bottom: 0;
+}
+#renwu .content{
+	font-size:12px;
+	padding-top:4px;
+}
+
+#huike .col-xs-12{
+	position: relative;
+	padding:8px 0;
+	border-bottom:1px solid #ccc;
+}
+#huike .col-xs-12 .row{
+	margin:0;
+}
+#huike .col-xs-12 .col-xs-3{
+	height:2.8em;
+	text-align: center;
+}
+#huike .col-xs-12 img{
+	height:100%;
+	border-radius: 50%;
+}
+#huike .col-xs-12 .col-xs-9{
+	padding:0;
+}
+#huike .col-xs-12 h5{
+	margin:0;
+}
+#huike .col-xs-12 p{
+	color:#999;
+	font-size:10px;
+	padding-top:8px;
+}
+#huike .zhiye{
+	position:absolute;
+	top:8px;
+	right:8px;
+	font-size:16px;
+	color:#ff663c;
+}
+
+#renqi .col-xs-12 .col-xs-3{
+	height: 2.8em;
+	text-align: center;
+}
+#renqi .col-xs-12 img {
+	height:100%;
+	border-radius:50%;
+}
+#renqi .col-xs-12 .col-xs-6 {
+	padding:0;
+}
+#renqi .col-xs-12 h5{
+	margin:0;
+	padding:0;
+}
+#renqi .col-xs-12 .col-xs-6 p{
+	color:#999;
+	font-size:10px;
+	padding-top:6px;
+	height:20px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+#renqi .col-xs-12 .detail{
+	padding:0;
+}
+#renqi .col-xs-12 .col-xs-3 p{
+	margin:0;
+	padding:0;
+}
+#renqi .col-xs-12 .col-xs-3 .zhiye{
+	color:#000;
+	font-size:16px;
+}
+#renqi .col-xs-12 .col-xs-3 .money{
+	color:#ff663c;
+	padding-top: 4px;
+	font-size:10px;
+}
+
+
+
+.footer{
+	position:fixed;
+	bottom:0;
+	border-top:1px solid #dbdbdb;
+	border-bottom:1px solid #dbdbdb;
+	background-color: #f7f7f7;
+	width:100%;
+	padding:0;
+
+}
+.footer .container{
+	padding:0;
+	margin:0;
+	width:100%;
+}
+.footer .row{
+	margin:0;
+}
+.footer .col-xs-3{
+	text-align: center;
+	padding:6px 0;
+	height:100%;
+	border-right:1px solid #dbdbdb;
+}
+.footer .col-xs-3:last-child{
+	border-right:none;
+}
+.footer .col-xs-3 img{
+	width:2em;
+	height:2.1em;
+}
+.footer .col-xs-3 h5{
+	margin:0;
+	font-size: 12px;
+}
+.footer .col-xs-3 a{
+	display: block;
+	color:#ff663c
+}
+

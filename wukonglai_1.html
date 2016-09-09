@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>预设问题</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+
+	<!-- <script type="text/javascript" src="jquery-3.1.0.js"></script> -->
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/wukonglai.css">
+	<script type="text/javascript">
+		function disc1(){
+			var sys1 = document.getElementById('sys');
+			sys1.style.display="block";
+			var sys2 = document.getElementById('mine');
+			sys2.style.display="none";
+			$(".sys span").addClass('active');
+			$('.mine span').removeClass('active');
+		}
+		function disc2(){
+			var sys1 = document.getElementById('sys');
+			sys1.style.display="none";
+			var sys2= document.getElementById('mine');
+			sys2.style.display="block";
+			$(".mine span").addClass('active');
+			$('.sys span').removeClass('active');
+		}
+	</script>
+</head>
+<body >
+<div style="background-color:#f7f7f7; margin:0px auto;">
+	<div class="header">
+		<button class="btn btn-default btn-sm" >
+			<span class="glyphicon glyphicon-remove"></span>
+		</button>
+
+		<div class="head">
+			<h4>悟空来</h4>
+		</div>
+
+		<button type="button" class="btn btn-default btn-sm dropdown-toggle"
+			data-toggle="dropdown" data-target="#dropdown" id="btn">
+				<span class="glyphicon glyphicon-option-vertical"></span>
+		</button>
+
+		<div class="btn-group dropdown" id="dropdown">		
+			<ul class="dropdown-menu">
+				<li><a href="###">***</a></li>
+				<li><a href="###">***</a></li>
+				<li><a href="###">***</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<ul id="myTab" class="nav">
+		<li  class="sys" onclick="disc1()">
+			<span >预设问题</span>
+		</li>
+		<li  class="mine" onclick="disc2()">
+			<span class="active">自定义问题</span>	
+		</li>
+		
+	</ul>
+
+
+	<div style="margin-top:10px;">
+		<div class="tab-pane " id="sys" style="display:none;">
+			<form>	
+				<div class="form-group">
+					<div class="container">
+						<div class="row">
+							<div class="radio col-xs-12">
+							<label><input type="radio" value="option1" name="optionsRadios">北京旅游去哪里好啊？</label>
+							<span class="price">￥2.0元</span>
+							</div>
+							<div class="radio col-xs-12">
+							<label><input type="radio" value="option2" name="optionsRadios">周末去哪里玩好？</label>
+							<span class="price">￥2.0元</span>
+							</div>
+							<div class="radio col-xs-12">
+							<label><input type="radio" value="option3" name="optionsRadios">小吃哪里比较出名？</label>
+							<span class="price">￥2.0元</span>
+							</div>
+							<div class="radio col-xs-12">
+							<label><input type="radio" value="option4" name="optionsRadios">中关村附近租房价格？</label>
+							<span class="price">￥2.0元</span>
+							</div>
+							<div class="radio col-xs-12">
+							<label><input type="radio" value="option5" name="optionsRadios">今天中午吃什么好？</label>
+							<span class="price">￥2.0元</span>
+							</div>
+						</div>
+					</div>	
+					<span class="sys-first">首次提问优惠1.99元</span>		
+					<button type="submit" class="btn btn-default" style="border-radius:4px;width:100%;background-color:#ff663c;color:#fff;height:2.5em;font-size:16px;">支付0.01元提问</button>
+				</div>		
+			</form>
+		</div>
+		<div class="tab-pane active" id="mine" >
+			<form role="form">	
+				<div class="form-group">
+					<textarea class="form-control text-area" name="content" rows="8"  placeholder="请完整描述您的任务需求以及希望得到哪方面的帮助和支付(请不要使用表情符号)"></textarea>	
+					<div class="input-group" style="padding-top:10px;width:100%;">	
+						<input type="text" name="" class="form-control" placeholder="悬赏金额最低2元" style="width:11em;letter-spacing:2px;color:#999;">	
+						<span class="input-group-btn" style="float:right:">
+						     <button type="submit" class="btn" style="border-radius:4px;background-color:#ff663c;color:#fff;width:6em;letter-spacing:8px;text-align:center;">提交</button>
+						</span>	
+					</div>
+				</div>		
+			</form>
+		</div>		
+	</div>
+</div>
+
+<footer class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-3" >
+				<a href="wukonglai_2.html">
+					<img src="img/首页.png">
+					<h5>首页</h5>
+				</a></div>
+			<div class="col-xs-3" >
+				<a href="wukonglai_2.html">
+					<img src="img/发现.png">
+					<h5>发现</h5>
+				</a>
+			</div>
+			<div class="col-xs-3 " ><a href="wukonglai_1.html" >
+				<img src="img/发布.png"><h5>发布</h5></a></div>
+			<div class="col-xs-3 " ><a href="wukonglai_5.html"><img src="img/我.png"><h5>我</h5></a></div>
+		</div>
+	</div>
+</footer>
+</body>
+</html>

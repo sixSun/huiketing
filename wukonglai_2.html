@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/wukonglai2.css">
+	<title>任务榜</title>
+	<script type="text/javascript">
+		function disc1(){
+			var sys1 = document.getElementById('renwu');
+			sys1.style.display="block";
+			var sys2 = document.getElementById('huike');
+			sys2.style.display="none";
+			var sys3 = document.getElementById('renqi');
+			sys3.style.display="none";
+
+			$(".renwu span").addClass('active');
+			$('.huike span').removeClass('active');
+			$('.renqi span').removeClass('active');
+			e.preventDefault();
+		}
+		function disc2(){
+			var sys1 = document.getElementById('renwu');
+			sys1.style.display="none";
+			var sys2 = document.getElementById('huike');
+			sys2.style.display="block";
+			var sys3 = document.getElementById('renqi');
+			sys3.style.display="none";
+
+			$(".huike span").addClass('active');
+			$('.renwu span').removeClass('active');
+			$('.renqi span').removeClass('active');
+			e.preventDefault();
+		}
+		function disc3(){
+			var sys1 = document.getElementById('renwu');
+			sys1.style.display="none";
+			var sys2 = document.getElementById('huike');
+			sys2.style.display="none";
+			var sys3 = document.getElementById('renqi');
+			sys3.style.display="block";
+
+			$(".renqi span").addClass('active');
+			$('.renwu span').removeClass('active');
+			$('.huike span').removeClass('active');
+			e.preventDefault();
+		}
+	</script>
+</head>
+<body >
+<div style="background-color:#f7f7f7;margin:0px auto;">
+	<div class="header">
+		<button class="btn btn-default btn-sm" >
+			<span class="glyphicon glyphicon-remove"></span>
+		</button>
+
+		<div class="head">
+			<h4>悟空来</h4>
+		</div>
+
+		<button type="button" class="btn btn-default btn-sm dropdown-toggle"
+			data-toggle="dropdown" data-target="#dropdown" id="btn">
+				<span class="glyphicon glyphicon-option-vertical"></span>
+		</button>
+
+		<div class="btn-group dropdown" id="dropdown">		
+			<ul class="dropdown-menu">
+				<li><a href="###">***</a></li>
+				<li><a href="###">***</a></li>
+				<li><a href="###">***</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<ul id="myTab" class="nav">
+		<li  class="renwu" onclick="disc1()">
+			<span class="active">任务榜</span>
+		</li>
+		<li  class="huike" onclick="disc2()">
+			<span >会客厅</span>	
+		</li>
+		<li  class="renqi" onclick="disc3()">
+			<span >人气榜</span>	
+		</li>
+		
+	</ul>
+
+	<div style="margin-top:10px;background-color:#fff;">
+		<div class="tab-pane " id="renwu" >
+			<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="row">
+						<div class="col-xs-3">
+							<img src="img/22.jpg">
+						</div>
+						<div class="col-xs-5">
+							<h5>刘鑫伟</h5>
+							<p class="date">8月8日 10:30</p>
+						</div>
+						<div class="col-xs-4 ">
+							<p class="money">￥6.0元</p>
+						</div>
+					</div>
+					<div class="content">
+					下午2点，帮我带一杯咖啡，送到望京花小学对面高层
+					</div>
+				</div>
+				<div class="col-xs-12">
+					<div class="row">
+						<div class="col-xs-3">
+							<img src="img/22.jpg">
+						</div>
+						<div class="col-xs-5">
+							<h5>刘鑫伟</h5>
+							<p class="date">8月8日 10:30</p>
+						</div>
+						<div class="col-xs-4 ">
+							<p class="money">￥6.0元</p>
+						</div>
+					</div>
+					<div class="content">
+					下午2点，帮我带一杯咖啡，送到望京花小学对面高层
+					</div>
+				</div>
+				<div class="col-xs-12">
+					<div class="row">
+						<div class="col-xs-3">
+							<img src="img/22.jpg">
+						</div>
+						<div class="col-xs-5">
+							<h5>刘鑫伟</h5>
+							<p class="date">8月8日 10:30</p>
+						</div>
+						<div class="col-xs-4 ">
+							<p class="money">￥6.0元</p>
+						</div>
+					</div>
+					<div class="content">
+					下午2点，帮我带一杯咖啡，送到望京花小学对面高层
+					</div>
+				</div>
+				<div class="col-xs-12">
+					<div class="row">
+						<div class="col-xs-3">
+							<img src="img/22.jpg">
+						</div>
+						<div class="col-xs-5">
+							<h5>刘鑫伟</h5>
+							<p class="date">8月8日 10:30</p>
+						</div>
+						<div class="col-xs-4 ">
+							<p class="money">￥6.0元</p>
+						</div>
+					</div>
+					<div class="content">
+					下午2点，帮我带一杯咖啡，送到望京花小学对面高层
+					</div>
+				</div>
+				<div class="col-xs-12">
+					<div class="row">
+						<div class="col-xs-3">
+							<img src="img/22.jpg">
+						</div>
+						<div class="col-xs-5">
+							<h5>刘鑫伟</h5>
+							<p class="date">8月8日 10:30</p>
+						</div>
+						<div class="col-xs-4 ">
+							<p class="money">￥6.0元</p>
+						</div>
+					</div>
+					<div class="content">
+					下午2点，帮我带一杯咖啡，送到望京花小学对面高层
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+
+		<div class="tab-pane " id="huike"  style="display:none;">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="row">
+							<div class="col-xs-3">
+								<img src="img/22.jpg">
+							</div>
+							<div class="col-xs-9">
+								<h5>刘鑫伟</h5>
+								<p>5年UI设计经验，可以帮您解决设计中的疑惑</p>
+							</div>					
+						</div>
+						<div class="zhiye">
+						UI设计师
+						</div>
+					</div>
+					<div class="col-xs-12">
+						<div class="row">
+							<div class="col-xs-3">
+								<img src="img/22.jpg">
+							</div>
+							<div class="col-xs-9">
+								<h5>刘鑫伟</h5>
+								<p>5年UI设计经验，可以帮您解决设计中的疑惑</p>
+							</div>					
+						</div>
+						<div class="zhiye">
+						UI设计师
+						</div>
+					</div>
+					<div class="col-xs-12">
+						<div class="row">
+							<div class="col-xs-3">
+								<img src="img/22.jpg">
+							</div>
+							<div class="col-xs-9">
+								<h5>刘鑫伟</h5>
+								<p>5年UI设计经验，可以帮您解决设计中的疑惑</p>
+							</div>					
+						</div>
+						<div class="zhiye">
+						UI设计师
+						</div>
+					</div>
+					<div class="col-xs-12">
+						<div class="row">
+							<div class="col-xs-3">
+								<img src="img/22.jpg">
+							</div>
+							<div class="col-xs-9">
+								<h5>刘鑫伟</h5>
+								<p>5年UI设计经验，可以帮您解决设计中的疑惑</p>
+							</div>					
+						</div>
+						<div class="zhiye">
+						UI设计师
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="tab-pane " id="renqi" style="display:none;">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						<div class="row">
+							<div class="col-xs-3">
+								<img src="img/22.jpg">
+							</div>
+							<div class="col-xs-6">
+								<h5>刘鑫伟</h5>
+								<p>5年UI设计经验，可以帮您解决设计中的疑惑</p>
+							</div>	
+							<div class="col-xs-3 detail">
+								<p class="zhiye">UI设计师</p>
+								<p class="money">已赚300元</p>
+							</div>				
+						</div>	
+					</div>
+					<div class="col-xs-12">
+						<div class="row">
+							<div class="col-xs-3">
+								<img src="img/22.jpg">
+							</div>
+							<div class="col-xs-6">
+								<h5>刘鑫伟</h5>
+								<p>5年UI设计经验，可以帮您解决设计中的疑惑</p>
+							</div>	
+							<div class="col-xs-3 detail">
+								<p class="zhiye">UI设计师</p>
+								<p class="money">已赚300元</p>
+							</div>				
+						</div>	
+					</div>
+					<div class="col-xs-12">
+						<div class="row">
+							<div class="col-xs-3">
+								<img src="img/22.jpg">
+							</div>
+							<div class="col-xs-6 ">
+								<h5>刘鑫伟</h5>
+								<p>5年UI设计经验，可以帮您解决设计中的疑惑</p>
+							</div>	
+							<div class="col-xs-3 detail">
+								<p class="zhiye">UI设计师</p>
+								<p class="money">已赚300元</p>
+							</div>				
+						</div>	
+					</div>
+					<div class="col-xs-12">
+						<div class="row">
+							<div class="col-xs-3">
+								<img src="img/22.jpg">
+							</div>
+							<div class="col-xs-6">
+								<h5>刘鑫伟</h5>
+								<p>5年UI设计经验，可以帮您解决设计中的疑惑</p>
+							</div>	
+							<div class="col-xs-3 detail">
+								<p class="zhiye">UI设计师</p>
+								<p class="money">已赚300元</p>
+							</div>				
+						</div>	
+					</div>				
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<footer class="footer">
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-3" >
+				<a href="wukonglai_2.html">
+					<img src="img/首页.png">
+					<h5>首页</h5>
+				</a></div>
+			<div class="col-xs-3" >
+				<a href="wukonglai_2.html">
+					<img src="img/发现.png">
+					<h5>发现</h5>
+				</a>
+			</div>
+			<div class="col-xs-3 " ><a href="wukonglai_1.html" >
+				<img src="img/发布.png"><h5>发布</h5></a></div>
+			<div class="col-xs-3 " ><a href="wukonglai_5.html"><img src="img/我.png"><h5>我</h5></a></div>
+		</div>
+	</div>
+</footer>
+
+
+</body>
+</html>

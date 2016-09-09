@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html style="height:100%">
 <head>
 	<title>预设问题</title>
 	<meta charset="utf-8">
@@ -28,16 +28,16 @@
 			$('.sys span').removeClass('active');
 		}
 
-		$('textarea,input').click(function(){
-			$('footer').css('position','static');
-		});
-		$('textarea,input').blur(function(){
-			$('footer').css('position','fixed');
-		});
+		// $('textarea,input').click(function(){
+		// 	$('footer').css('position','static');
+		// });
+		// $('textarea,input').blur(function(){
+		// 	$('footer').css('position','fixed');
+		// });
 	</script>
 </head>
-<body >
-<div style="background-color:#f7f7f7; margin:0px auto;">
+<body style="height:100%">
+<div style="background-color:#f7f7f7; margin:0px auto;height:100%;position:relative;">
 	<div class="header">
 		<button class="btn btn-default btn-sm" >
 			<span class="glyphicon glyphicon-remove"></span>
@@ -119,7 +119,6 @@
 			</form>
 		</div>		
 	</div>
-</div>
 
 <footer class="footer">
 	<div class="container">
@@ -141,5 +140,8 @@
 		</div>
 	</div>
 </footer>
+</div>
+
+
 </body>
 </html>

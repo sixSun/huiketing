@@ -42,11 +42,12 @@
 				
 				if (e) {
 					if (e.type == 'click') {
-						// $('footer').css('position','static');
+						
 						setTimeout(function() {
 							windowInnerHeight = window.innerHeight;
 							timer = setInterval(function() {eventCheck(),100});
-						},500)
+						},500);
+						$('footer').css('position','static');
 					} else {
 						clearInterval(timer);
 						// $('footer').css('position','absolute');

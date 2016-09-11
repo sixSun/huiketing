@@ -28,15 +28,17 @@
 			$('.sys span').removeClass('active');
 		}
 
-		$(document).click(function(){
-			if($('input').is(':focus') || $('textarea').is(':focus')) {
-				setTimeout(function(){$('footer').css('position','static');},100)
-			} else {
-				$('footer').css('position','absolute');
-			}
-		});
+		
 		
 		$(function(){
+			$(document).click(function(){
+				if($('input').is(':focus') || $('textarea').is(':focus')) {
+					setTimeout(function(){$('footer').css('position','static');},100)
+				} else {
+					$('footer').css('position','absolute');
+				}
+			});
+
 			var timer,windowInnerHeight;
 			function eventCheck(e) {
 				

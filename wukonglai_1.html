@@ -31,32 +31,21 @@
 		
 		
 		$(function(){
-			// $(document).click(function(){
-			// 	if($('input').is(':focus') || $('textarea').is(':focus')) {
-			// 		$('footer').css('position','static');
-			// 	} else {
-			// 		$('footer').css('position','fixed');
-			// 	}
-			// });
-
 			var timer,windowInnerHeight;
 			function eventCheck(e) {
 				
 				if (e) {
 					if (e.type == 'click') {
-						 $('footer').css('position','static');
-						setTimeout(function() {
-							windowInnerHeight = window.innerHeight;
-						//	$('footer').css('position','static');
-							timer = setInterval(function() {eventCheck(),100});
-						},500);
-
 						
+						setTimeout(function() {
+							$('footer').css('position','static');
+							windowInnerHeight = window.innerHeight;
+
+							timer = setInterval(function() {eventCheck(),100});
+						},500);		
 					} else {
 						clearInterval(timer);
-						// $('footer').css('position','absolute');
 					}
-					
 				} else {
 					if (window.innerHeight >windowInnerHeight) {
 						clearInterval(timer);
@@ -66,9 +55,7 @@
 			}
 			$('input').bind('click',eventCheck).bind('blur',eventCheck);
 			$('textarea').bind('click',eventCheck).bind('blur',eventCheck);
-		})
-		
-		
+		})	
 	</script>
 </head>
 <body >

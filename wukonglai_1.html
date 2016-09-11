@@ -28,12 +28,19 @@
 			$('.sys span').removeClass('active');
 		}
 
-		$('textarea,input').click(function(){
-			$('footer').css('position','static');
-		});
-		$('textarea,input').blur(function(){
-			$('footer').css('position','absolute');
-		});
+		$('document').click(function(){
+			if($('input').is(':focus') && $('textarea').is(':focus')) {
+				$('footer').css('position','static');
+			} else {
+				$('footer').css('position','absolute');
+			}
+		})
+		// $('textarea,input').click(function(){
+		// 	$('footer').css('position','static');
+		// });
+		// $('textarea,input').blur(function(){
+		// 	$('footer').css('position','absolute');
+		// });
 	</script>
 </head>
 <body style="height:100%">

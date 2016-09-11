@@ -34,25 +34,32 @@
 			} else {
 				$('footer').css('position','absolute');
 			}
-		})
-		function eventCheck(e) {
+		});
+		
+		$(function(){
 			var timer,windowInnerHeight;
-			if (e) {
-				if (e.type == 'click') {
-					setTimeout(function() {
-						windowInnerHeight = window.innerHeight;
-						timer = setInterval(function() {eventCheck(),100});
-					},500)
-				} else clearInterval(timer);
-			} else {
-				if (window.innerHeight >windowInnerHeight) {
-					clearInterval(timer);
-					$('footer').css('position','absolute');
+			function eventCheck(e) {
+				
+				if (e) {
+					if (e.type == 'click') {
+						$('footer').css('position','static');
+						setTimeout(function() {
+							windowInnerHeight = window.innerHeight;
+							timer = setInterval(function() {eventCheck(),100});
+						},500)
+					} else clearInterval(timer);
+				} else {
+					if (window.innerHeight >windowInnerHeight) {
+						clearInterval(timer);
+						$('footer').css('position','absolute');
+					}
 				}
 			}
-		}
-		$('input').click(eventCheck).blur(eventCheck);
-		$('textarea').click(eventCheck).blur(eventCheck);
+			$('input').bind('click',eventCheck).bind('blur',eventCheck);
+			$('textarea').bind('click',eventCheck).bind('blur',eventCheck);
+		})
+		
+		
 	</script>
 </head>
 <body style="height:100%">

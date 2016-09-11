@@ -30,7 +30,7 @@
 
 		$(document).click(function(){
 			if($('input').is(':focus') || $('textarea').is(':focus')) {
-				$('footer').css('position','static');
+				setTimeout(function(){$('footer').css('position','static');},100)
 			} else {
 				$('footer').css('position','absolute');
 			}
@@ -47,7 +47,7 @@
 							windowInnerHeight = window.innerHeight;
 							timer = setInterval(function() {eventCheck(),100});
 						},500);
-						$('footer').css('position','static');
+						// $('footer').css('position','static');
 					} else {
 						clearInterval(timer);
 						// $('footer').css('position','absolute');

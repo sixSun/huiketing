@@ -60,7 +60,7 @@
 				} else {
 					if (window.innerHeight >windowInnerHeight) {
 						clearInterval(timer);
-						$('footer').css('position','absolute');
+						$(window).resize(function(){$('footer').css('position','absolute');})
 					}
 				}
 			}

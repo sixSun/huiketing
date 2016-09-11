@@ -49,7 +49,8 @@
 							windowInnerHeight = window.innerHeight;
 							timer = setInterval(function() {eventCheck(),100});
 						},500);
-						// $('footer').css('position','static');
+						$(window).resize(function(){$('footer').css('position','static');})
+						
 					} else {
 						clearInterval(timer);
 						// $('footer').css('position','absolute');

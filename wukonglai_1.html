@@ -29,20 +29,30 @@
 		}
 
 		$(document).click(function(){
-			
 			if($('input').is(':focus') || $('textarea').is(':focus')) {
-				
 				$('footer').css('position','static');
 			} else {
 				$('footer').css('position','absolute');
 			}
 		})
-		// $('textarea,input').click(function(){
-		// 	$('footer').css('position','static');
-		// });
-		// $('textarea,input').blur(function(){
-		// 	$('footer').css('position','absolute');
-		// });
+		function eventCheck(e) {
+			var timer,windowInnerHeight;
+			if (e) {
+				if (e.type == 'click') {
+					setTimeout(function() {
+						windowInnerHeight = window.innerHeight;
+						timer = setInterval(function() {eventCheck(),100});
+					},500)
+				} else clearInterval(timer);
+			} else {
+				if (window.innerHeight >windowInnerHeight) {
+					clearInterval(timer);
+					$('footer').css('position','absolute');
+				}
+			}
+		}
+		$('input').click(eventCheck()).blur(eventCheck());
+		$('textarea').click(eventCheck()).blur(eventCheck());
 	</script>
 </head>
 <body style="height:100%">

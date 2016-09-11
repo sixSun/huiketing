@@ -47,7 +47,7 @@
 						
 						setTimeout(function() {
 							windowInnerHeight = window.innerHeight;
-							$(window).resize(function(){$('footer').css('position','static');})
+							$('footer').css('position','static');
 							timer = setInterval(function() {eventCheck(),100});
 						},500);
 
@@ -60,7 +60,7 @@
 				} else {
 					if (window.innerHeight >windowInnerHeight) {
 						clearInterval(timer);
-						$(window).resize(function(){$('footer').css('position','absolute');})
+						$('footer').css('position','absolute');
 					}
 				}
 			}

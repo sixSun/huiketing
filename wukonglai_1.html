@@ -36,9 +36,9 @@
 				
 				if (e) {
 					if (e.type == 'click') {
-						
+						$('footer').css('position','static');
 						setTimeout(function() {
-							$('footer').css('position','static');
+							//$('footer').css('position','static');
 							windowInnerHeight = window.innerHeight;
 
 							timer = setInterval(function() {eventCheck(),200});

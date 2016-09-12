@@ -45,7 +45,9 @@
 						},500);		
 					} else {
 						clearInterval(timer);
-						$('footer').css('position','fixed');
+						setTimeout(function(){
+							$('footer').css('position','fixed');
+						},500);
 					}
 				} else {
 					if (window.innerHeight >windowInnerHeight) {

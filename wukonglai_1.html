@@ -39,23 +39,25 @@
 						setTimeout(function() {
 							$('footer').css('position','static');
 							windowInnerHeight = window.innerHeight;
-							timer = setInterval(function() {eventCheck(e)},200);
+							timer = setInterval(function() {eventCheck()},200);
 						},500);		
 					} else {
+						
 						clearInterval(timer);
 						setTimeout(function(){
 							$('footer').css('position','fixed');
 						},500);
 					}
 				} else {
+
 					if (window.innerHeight > windowInnerHeight) {
 						clearInterval(timer);
 						$('footer').css('position','fixed');
 					}
 				}
 			}
-			$('input').bind('click',eventCheck(e)).bind('blur',eventCheck(e));
-			$('textarea').bind('click',eventCheck(e)).bind('blur',eventCheck(e));
+			$('input').bind('click',eventCheck).bind('blur',eventCheck);
+			$('textarea').bind('click',eventCheck).bind('blur',eventCheck);
 		})	
 	</script>
 </head>

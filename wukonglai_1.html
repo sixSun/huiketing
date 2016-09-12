@@ -31,53 +31,31 @@
 		
 		
 		$(function(){
-			var timer_1,windowInnerHeight_1,timer_2,windowInnerHeight_2;
-			function eventCheck_1(e) {
+			var timer,windowInnerHeight;
+			function eventCheck(e) {
 				
 				if (e) {
 					if (e.type == 'click') {
 						setTimeout(function() {
 							$('footer').css('position','static');
-							windowInnerHeight_1 = window.innerHeight;
-							timer_1 = setInterval(function() {eventCheck(),200});
+							windowInnerHeight = window.innerHeight;
+							timer = setInterval(function() {eventCheck(e),200});
 						},500);		
 					} else {
-						clearInterval(timer_1);
+						clearInterval(timer);
 						setTimeout(function(){
 							$('footer').css('position','fixed');
 						},500);
 					}
 				} else {
-					if (window.innerHeight >windowInnerHeight_1) {
-						clearInterval(timer_1);
+					if (window.innerHeight > windowInnerHeight) {
+						clearInterval(timer);
 						$('footer').css('position','fixed');
 					}
 				}
 			}
-			function eventCheck_2(e) {
-				
-				if (e) {
-					if (e.type == 'click') {
-						setTimeout(function() {
-							$('footer').css('position','static');
-							windowInnerHeight_2 = window.innerHeight;
-							timer_2 = setInterval(function() {eventCheck(),200});
-						},500);		
-					} else {
-						clearInterval(timer_2);
-						setTimeout(function(){
-							$('footer').css('position','fixed');
-						},500);
-					}
-				} else {
-					if (window.innerHeight >windowInnerHeight_2) {
-						clearInterval(timer_2);
-						$('footer').css('position','fixed');
-					}
-				}
-			}
-			$('input').bind('click',eventCheck_1).bind('blur',eventCheck_1);
-			$('textarea').bind('click',eventCheck_2).bind('blur',eventCheck_2);
+			$('input').bind('click',eventCheck).bind('blur',eventCheck);
+			$('textarea').bind('click',eventCheck).bind('blur',eventCheck);
 		})	
 	</script>
 </head>

@@ -33,7 +33,6 @@
 		$(function(){
 			var timer,windowInnerHeight;
 			function eventCheck(e) {
-				
 				if (e) {
 					if (e.type == 'click') {
 						setTimeout(function() {
@@ -42,14 +41,12 @@
 							timer = setInterval(function() {eventCheck()},200);
 						},500);		
 					} else {
-						
 						clearInterval(timer);
 						setTimeout(function(){
 							$('footer').css('position','fixed');
 						},500);
 					}
 				} else {
-
 					if (window.innerHeight > windowInnerHeight) {
 						clearInterval(timer);
 						$('footer').css('position','fixed');

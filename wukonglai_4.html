@@ -8,6 +8,34 @@
 	<!-- <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script> -->
     <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type="text/css" href="css/wukonglai_3.css">
+    <script type="text/javascript">
+    	$(function(){
+			var timer,windowInnerHeight;
+			function eventCheck(e) {
+				if (e) {
+					if (e.type == 'click') {
+						setTimeout(function() {
+							$('footer').css('position','static');
+							windowInnerHeight = window.innerHeight;
+							timer = setInterval(function() {eventCheck()},200);
+						},500);		
+					} else {
+						clearInterval(timer);
+						setTimeout(function(){
+							$('footer').css('position','fixed');
+						},500);
+					}
+				} else {
+					if (window.innerHeight > windowInnerHeight) {
+						clearInterval(timer);
+						$('footer').css('position','fixed');
+					}
+				}
+			}
+			$('input').bind('click',eventCheck).bind('blur',eventCheck);
+			$('textarea').bind('click',eventCheck).bind('blur',eventCheck);
+		})
+    </script>
 	<title>发现-会客厅-敲门</title>
 </head>
 <body >

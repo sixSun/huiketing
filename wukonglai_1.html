@@ -54,8 +54,8 @@
 					}
 				}
 			}
-			$('input').bind('click',eventCheck).bind('blur',eventCheck);
-			$('textarea').bind('click',eventCheck).bind('blur',eventCheck);
+			$('input').bind('click',eventCheck(e)).bind('blur',eventCheck(e));
+			$('textarea').bind('click',eventCheck(e)).bind('blur',eventCheck(e));
 		})	
 	</script>
 </head>
